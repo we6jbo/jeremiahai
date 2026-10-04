@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "marker": "zrIyFl4vKEeQJsoH78vaA9seiGUlYAUY4pOnp3lbaQ67XPiDP5gh5wFwglmJjUD",
+  "extension": ".jaiw",
+  "auto_suggest_title": true,
+  "auto_suggest_tags": true,
+  "preserve_voice": true,
+  "filename_collision": "append-number",
+  "vibe_result_path": "/tmp/oct3-writing/expanded-draft.jaiw"
+}
