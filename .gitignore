@@ -146,3 +146,11 @@ Thumbs.db
 .directory
 .vscode/
 .idea/
+
+# Local Flathub validation/readiness artifacts
+.oneal-flathub-readiness-ok
+*.before-flathub-*
+*.before-validator-*
+
+# Temporary Flathub submission bundle
+flathub-submission/

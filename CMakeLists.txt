@@ -21,3 +21,11 @@ qt_add_executable(jeremiahai
 target_link_libraries(jeremiahai PRIVATE Qt6::Widgets)
 
 install(TARGETS jeremiahai RUNTIME DESTINATION bin)
+
+# Flathub desktop integration
+install(FILES org.oneal.jeremiahai.desktop
+        DESTINATION share/applications)
+install(FILES org.oneal.jeremiahai.metainfo.xml
+        DESTINATION share/metainfo)
+install(FILES org.oneal.jeremiahai.svg
+        DESTINATION share/icons/hicolor/scalable/apps)

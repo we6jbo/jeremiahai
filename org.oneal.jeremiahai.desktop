@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=JeremiahAI
+Comment=Personal AI continuity, writing, and project orchestration
+Exec=jeremiahai
+Icon=org.oneal.jeremiahai
+Terminal=false
+Categories=Utility;
