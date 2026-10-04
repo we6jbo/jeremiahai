@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 
-project(jeremiahai VERSION 0.1 LANGUAGES CXX)
+project(jeremiahai VERSION 1.4.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,10 +15,9 @@ qt_add_executable(jeremiahai
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    resources.qrc
 )
 
 target_link_libraries(jeremiahai PRIVATE Qt6::Widgets)
 
-install(TARGETS jeremiahai
-    RUNTIME DESTINATION bin
-)
+install(TARGETS jeremiahai RUNTIME DESTINATION bin)
