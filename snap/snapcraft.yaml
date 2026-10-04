@@ -11,6 +11,13 @@ description: |
 grade: stable
 confinement: strict
 
+license: Apache-2.0
+website: https://j03.page/
+contact: https://github.com/we6jbo/jeremiahai/issues
+issues: https://github.com/we6jbo/jeremiahai/issues
+source-code: https://github.com/we6jbo/jeremiahai
+icon: org.oneal.jeremiahai.svg
+
 apps:
   jeremiahai:
     command: usr/bin/jeremiahai
@@ -22,6 +29,9 @@ parts:
   jeremiahai:
     plugin: cmake
     source: .
+    override-pull: |
+      craftctl default
+      sed -i -e 's|^Icon=org.oneal.jeremiahai$|Icon=/usr/share/icons/hicolor/scalable/apps/org.oneal.jeremiahai.svg|' org.oneal.jeremiahai.desktop
     cmake-parameters:
       - -DCMAKE_INSTALL_PREFIX=/usr
       - -DCMAKE_BUILD_TYPE=Release
