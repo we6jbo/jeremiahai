@@ -1,7 +1,148 @@
+# JeremiahAI — files that should stay out of GitHub
+# Generated for the current /home/we6jbo/Projects/jeremiahai project.
+
+# ------------------------------------------------------------
+# Build output / compiled artifacts
+# ------------------------------------------------------------
 build/
 build-*/
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
+cmake_install.cmake
+Makefile
 *.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+
+# ------------------------------------------------------------
+# Qt Creator / IDE user-specific state
+# ------------------------------------------------------------
+.qtcreator/
 *.user
+*.user.*
+CMakeLists.txt.user
+
+# ------------------------------------------------------------
+# Python generated files
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# ------------------------------------------------------------
+# JeremiahAI local/private family & genealogy data
+# These may contain names, dates, relationships, TG/AKA data,
+# positions, or other personal/family information.
+# ------------------------------------------------------------
+data/tg_registry.db
+data/family_seed.json
+family-defaults/kinmap_state.json
+tg_context_snapshot.json
+
+# Any future local family databases / exports
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*family*.json
+*kinmap_state*.json
+*tg_registry*.db
+
+# ------------------------------------------------------------
+# Jeremiah-specific learned writing/language data
+# Keep the engine/code public if desired, but not the evolving
+# personal dictionary, mistake history, or learned rules/history.
+# ------------------------------------------------------------
+pi-language/learned_rules.json
+pi-language/personal_dictionary.txt
+pi-language/changes.md
+pi-language/mistakes.db
+pi-language/*.db
+pi-language/history/
+pi-language/vale/
+
+# ------------------------------------------------------------
+# Writing documents / drafts / caches / history
+# ------------------------------------------------------------
+*.jaiw
+writing-cache/
+file-history/
+versions/
+trash/
+documents/
+drafts/
+*.draft
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.swp
+*~
+
+# ------------------------------------------------------------
+# Local settings/state that can reveal machine/user paths
+# Keep generic templates only if you intentionally sanitize them.
+# ------------------------------------------------------------
+.local/
+.state/
+cache/
+logs/
+*.log
+settings-local/
+settings-private/
+view-tab-visibility.json
+
+# ------------------------------------------------------------
+# Secrets, credentials, keys, tokens
+# ------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+*token*
+*secret*
+*password*
+*credentials*
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+known_hosts
+authorized_keys
+
+# ------------------------------------------------------------
+# Temporary / recovery / deployment artifacts
+# ------------------------------------------------------------
+tmp/
+temp/
+backup/
+backups/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.snap
+
+# ------------------------------------------------------------
+# OS/editor noise
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.directory
+.vscode/
+.idea/

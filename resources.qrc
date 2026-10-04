@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="/family">
+    <file alias="family_seed.json">data/family_seed.json</file>
+    <file alias="tg_registry.db">data/tg_registry.db</file>
+  </qresource>
+  <qresource prefix="/jeremiahai">
+    <file alias="VIBE_INSTRUCTIONS.md">VIBE_INSTRUCTIONS.md</file>
+    <file alias="tg_context_snapshot.json">tg_context_snapshot.json</file>
+    <file alias="writing_sync.py">tools/writing_sync.py</file>
+    <file alias="writing_analyze.py">tools/writing_analyze.py</file>
+    <file alias="public_privacy_check.py">tools/public_privacy_check.py</file>
+      <file alias="integrity_registry.py">tools/integrity_registry.py</file>
+      <file alias="troubleshoot.py">tools/troubleshoot.py</file>
+      <file alias="file_history.py">tools/file_history.py</file>
+  </qresource>
+</RCC>
