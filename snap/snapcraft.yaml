@@ -1,0 +1,27 @@
+name: jeremiahai
+title: JeremiahAI
+base: core24
+version: '1.6.0'
+summary: Personal AI continuity, writing, and project orchestration
+description: |
+  JeremiahAI is a desktop application for personal AI-assisted project
+  continuity, writing workflows, task orchestration, family data tools,
+  troubleshooting, and recovery-oriented workflows.
+
+grade: stable
+confinement: strict
+
+apps:
+  jeremiahai:
+    command: usr/bin/jeremiahai
+    desktop: usr/share/applications/org.oneal.jeremiahai.desktop
+    extensions:
+      - kde-neon-6
+
+parts:
+  jeremiahai:
+    plugin: cmake
+    source: .
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr
+      - -DCMAKE_BUILD_TYPE=Release
